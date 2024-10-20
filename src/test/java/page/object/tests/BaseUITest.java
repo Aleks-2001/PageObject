@@ -14,8 +14,8 @@ public class BaseUITest {
 
     @Before
     public void startUp() {
-//        initChrome();
-        initSafari();
+        initChrome();
+//        initSafari();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     }
 
