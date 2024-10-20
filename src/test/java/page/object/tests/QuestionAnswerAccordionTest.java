@@ -30,12 +30,12 @@ public class QuestionAnswerAccordionTest extends BaseUITest {
         }
 
         @Test
-        public void checkAnswer() {
+        public void checkAnswer() {      // тест для проверки правильости "вопрос - ответ" в FAQ
             MainPage mainPage = new MainPage(driver);
             mainPage.openMainPage();
             mainPage.cookieButtonConfirmClick();
-            String actualAnswer = mainPage.clickQuestionCheckAnswer(questionMessage); // обратились к полям тестового класса
-            assertEquals(answerMessage, actualAnswer); // сравнили ожидаемый и фактический результат
+            String actualAnswer = mainPage.clickQuestionCheckAnswer(questionMessage);
+            assertEquals(answerMessage, actualAnswer);
         }
 
 

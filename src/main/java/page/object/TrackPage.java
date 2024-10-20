@@ -10,7 +10,7 @@ import java.time.Duration;
 public class TrackPage {
     protected WebDriver driver;
 
-    private By notFoundOrderImg = By.xpath(".//div[contains(@class, 'NotFound')]/img");
+    private By notFoundOrderImg = By.xpath(".//div[contains(@class, 'NotFound')]/img");     // элемент страницы "такого заказа не существует"
 
     public TrackPage(WebDriver driver) {
         this.driver = driver;

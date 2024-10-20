@@ -7,7 +7,7 @@ import page.object.OrderPage;
 public class OrderingProcessTest extends BaseUITest{
 
     @Test
-    public void firstValuesOrderingProcessTest() {
+    public void firstValuesOrderingProcessTest() {       // тест для проверки всего пути оформления заказа (первый набор данных)
         MainPage mainPage = new MainPage(driver);
         mainPage.openMainPage();
         mainPage.cookieButtonConfirmClick();
@@ -22,7 +22,7 @@ public class OrderingProcessTest extends BaseUITest{
         Assert.assertTrue(isDisplayedOrderSuccessful);
     }
     @Test
-    public void secondValuesOrderingProcessTest() {
+    public void secondValuesOrderingProcessTest() {      // тест для проверки всего пути оформления заказа (второй набор данных)
         MainPage mainPage = new MainPage(driver);
         mainPage.openMainPage();
         mainPage.cookieButtonConfirmClick();

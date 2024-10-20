@@ -10,21 +10,21 @@ import java.time.LocalDate;
 public class OrderPage {
     protected WebDriver driver;
 
-    private By inputFirstName = By.xpath(".//div[contains(@class, 'InputContainer')]/input[@placeholder = '* Имя']");
-    private By inputSecondName = By.xpath(".//div[contains(@class, 'InputContainer')]/input[@placeholder = '* Фамилия']");
-    private By inputAdress = By.xpath(".//div[contains(@class, 'InputContainer')]/input[contains(@placeholder, '* Адрес')]");
-    private By inputMetroStation = By.xpath(".//div[contains(@class, 'select-search')]/input[contains(@placeholder, 'метро')]");
-    private By inputTelephoneNumber = By.xpath(".//div[contains(@class, 'InputContainer')]/input[contains(@placeholder, 'елефон')]");
-    private By nextButton= By.xpath(".//div[contains(@class, 'NextButton')]/button[contains(text(), 'алее')]");
-    private By deliveryDateInput = By.xpath(".//input[contains(@placeholder, 'Когда привезти')]");
-    private By intervalOfRentActivate = By.xpath(".//span[contains(@class, 'Dropdown-arrow')]");
-    private By intervalOfRentInput = By.xpath(".//div[contains(@class, 'Dropdown-menu')]/div[5]");
-    private By inputColorBlack = By.xpath(".//input[@id = 'black' and contains(@class, 'Checkbox_Input')]");
-    private By inputColorGray = By.xpath(".//input[@id = 'grey' and contains(@class, 'Checkbox_Input')]");
-    private By inputComment = By.xpath(".//div[contains(@class, 'InputContainer')]/input[contains(@placeholder, 'омментарий')]");
-    private By confirmOrderButton = By.xpath(".//div[contains(@class, 'Order_Buttons')]/button[text() = 'Заказать']");
-    private By confirmOrderButtonYes = By.xpath(".//div[contains(@class, 'Order_Buttons')]/button[text() = 'Да']");
-    private By orserSuccesful = By.xpath(".//*[contains(text(), 'Заказ оформлен')]");
+    private By inputFirstName = By.xpath(".//div[contains(@class, 'InputContainer')]/input[@placeholder = '* Имя']");   // поле для ввода имени
+    private By inputSecondName = By.xpath(".//div[contains(@class, 'InputContainer')]/input[@placeholder = '* Фамилия']");   // поле для ввода фамилии
+    private By inputAdress = By.xpath(".//div[contains(@class, 'InputContainer')]/input[contains(@placeholder, '* Адрес')]");   // поле для ввода адреса
+    private By inputMetroStation = By.xpath(".//div[contains(@class, 'select-search')]/input[contains(@placeholder, 'метро')]");   // поле выбора станции метро
+    private By inputTelephoneNumber = By.xpath(".//div[contains(@class, 'InputContainer')]/input[contains(@placeholder, 'елефон')]");   // поле для ввода номера телефона
+    private By nextButton= By.xpath(".//div[contains(@class, 'NextButton')]/button[contains(text(), 'алее')]");   // кнопка Далее
+    private By deliveryDateInput = By.xpath(".//input[contains(@placeholder, 'Когда привезти')]");   // поле для ввода даты доставки самоката
+    private By intervalOfRentActivate = By.xpath(".//span[contains(@class, 'Dropdown-arrow')]");   // поле для выбора срока аренда
+    private By intervalOfRentInput = By.xpath(".//div[contains(@class, 'Dropdown-menu')]/div[5]");   // один из элементов в всплывающем меню "срок аренды"
+    private By inputColorBlack = By.xpath(".//input[@id = 'black' and contains(@class, 'Checkbox_Input')]");   // элемент для клика - выбор черного цвета
+    private By inputColorGray = By.xpath(".//input[@id = 'grey' and contains(@class, 'Checkbox_Input')]");   // элемент для клика - выбор серого цвета
+    private By inputComment = By.xpath(".//div[contains(@class, 'InputContainer')]/input[contains(@placeholder, 'омментарий')]");   // поле для комментария
+    private By confirmOrderButton = By.xpath(".//div[contains(@class, 'Order_Buttons')]/button[text() = 'Заказать']");   // кнопка Заказать
+    private By confirmOrderButtonYes = By.xpath(".//div[contains(@class, 'Order_Buttons')]/button[text() = 'Да']");   // кнопка подтверждения заказа "Да"
+    private By orserSuccesful = By.xpath(".//*[contains(text(), 'Заказ оформлен')]");   // элемент страницы "Заказ оформлен"
 
     public OrderPage(WebDriver driver) {
         this.driver = driver;

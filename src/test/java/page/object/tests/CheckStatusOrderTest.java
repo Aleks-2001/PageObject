@@ -7,7 +7,7 @@ import page.object.TrackPage;
 public class CheckStatusOrderTest extends BaseUITest {
 
     @Test
-    public void checkOrderStatusNotExistTest() {
+    public void checkOrderStatusNotExistTest() {      // тест для проверки статуса заказа
         MainPage mainPage = new MainPage(driver);
         mainPage.openMainPage();
         mainPage.cookieButtonConfirmClick();
