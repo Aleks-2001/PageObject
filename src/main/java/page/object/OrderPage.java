@@ -2,6 +2,7 @@ package page.object;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.json.JsonOutput;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
@@ -9,6 +10,8 @@ import java.time.LocalDate;
 
 public class OrderPage {
     protected WebDriver driver;
+
+    JsonOutput
 
     private By inputFirstName = By.xpath(".//div[contains(@class, 'InputContainer')]/input[@placeholder = '* Имя']");   // поле для ввода имени
     private By inputSecondName = By.xpath(".//div[contains(@class, 'InputContainer')]/input[@placeholder = '* Фамилия']");   // поле для ввода фамилии
