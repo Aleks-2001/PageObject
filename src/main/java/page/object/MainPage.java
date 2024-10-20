@@ -6,16 +6,17 @@ import java.time.Duration;
 
 public class MainPage {
     protected WebDriver driver;
-    // кнопка подтверждения согласия с куки
-    private By cookieButtonConfirm = By.xpath(".//*[@id='rcc-confirm-button']");
-    private By orderButtonUpper = By.xpath(".//div[contains(@class, 'Header_Nav')]/button[text() = 'Заказать']");
-    private By orderButtonLower = By.xpath(".//div[contains(@class, 'Home_Finish')]/button[text() = 'Заказать']");
-    private By statusOrderButton = By.xpath(".//button[contains(@class, 'Header_Link')]");
-    private By orderNumberInput = By.xpath(".//input[@type = 'text']");
-    private By goButton = By.xpath(".//button[contains(@class, 'Header_Button') and text() = 'Go!']");
-    public static String Main_Page_URL = "https://qa-scooter.praktikum-services.ru";
-    public static final String FAQ_QUESTION_PATTERN = ".//div[contains(@id, 'accordion__heading') and text() = '%s']";
-    public static final String FAQ_ANSWER_PATTERN = ".//div[contains(@class, 'accordion__panel') and not (@hidden)]/p";
+
+
+    private By cookieButtonConfirm = By.xpath(".//*[@id='rcc-confirm-button']");  // кнопка подтверждения согласия с куки
+    private By orderButtonUpper = By.xpath(".//div[contains(@class, 'Header_Nav')]/button[text() = 'Заказать']");  // кнопка "заказ" в верхней части страницы
+    private By orderButtonLower = By.xpath(".//div[contains(@class, 'Home_Finish')]/button[text() = 'Заказать']");  // кнопка "заказ" в нижней части страницы
+    private By statusOrderButton = By.xpath(".//button[contains(@class, 'Header_Link')]");  // кнопка проверки статуса заказа
+    private By orderNumberInput = By.xpath(".//input[@type = 'text']");  //  поле для ввода номера заказа
+    private By goButton = By.xpath(".//button[contains(@class, 'Header_Button') and text() = 'Go!']");  // кнопка Go
+    public static String Main_Page_URL = "https://qa-scooter.praktikum-services.ru";  // адрес главной страницы
+    public static final String FAQ_QUESTION_PATTERN = ".//div[contains(@id, 'accordion__heading') and text() = '%s']";   // паттерн вопроса в FAQ для создания локатора поиска
+    public static final String FAQ_ANSWER_PATTERN = ".//div[contains(@class, 'accordion__panel') and not (@hidden)]/p";  // паттерн ответа в FAQ
 
     public  MainPage (WebDriver driver){
         this.driver = driver;
