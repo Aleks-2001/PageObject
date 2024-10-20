@@ -6,7 +6,7 @@ import java.time.Duration;
 
 public class MainPage {
     protected WebDriver driver;
-
+    // кнопка подтверждения согласия с куки
     private By cookieButtonConfirm = By.xpath(".//*[@id='rcc-confirm-button']");
     private By orderButtonUpper = By.xpath(".//div[contains(@class, 'Header_Nav')]/button[text() = 'Заказать']");
     private By orderButtonLower = By.xpath(".//div[contains(@class, 'Home_Finish')]/button[text() = 'Заказать']");
