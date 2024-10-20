@@ -11,8 +11,6 @@ import java.time.LocalDate;
 public class OrderPage {
     protected WebDriver driver;
 
-    JsonOutput
-
     private By inputFirstName = By.xpath(".//div[contains(@class, 'InputContainer')]/input[@placeholder = '* Имя']");   // поле для ввода имени
     private By inputSecondName = By.xpath(".//div[contains(@class, 'InputContainer')]/input[@placeholder = '* Фамилия']");   // поле для ввода фамилии
     private By inputAdress = By.xpath(".//div[contains(@class, 'InputContainer')]/input[contains(@placeholder, '* Адрес')]");   // поле для ввода адреса
